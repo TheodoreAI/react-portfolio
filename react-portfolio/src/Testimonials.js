@@ -1,12 +1,11 @@
 // src/compoenents/Testimonials.js
-import {TerminalIcon, UsersIcon} from "@heroicons/react/solid";
-import {testimonials} from "../data";
+import {testimonials} from "./data";
 import React from "react";
 export default function Testimonials(){
     return (
         <section id="testimonials">
       <div className="container px-5 py-10 mx-auto text-center">
-        <UsersIcon className="w-10 inline-block mb-4" />
+
         <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
           Client Testimonials
         </h1>
@@ -14,7 +13,7 @@ export default function Testimonials(){
           {testimonials.map((testimonial) => (
             <div className="p-4 md:w-1/2 w-full">
               <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
-                <TerminalIcon className="block w-8 text-gray-500 mb-4" />
+               
                 <p className="leading-relaxed mb-6">{testimonial.quote}</p>
                 <div className="inline-flex items-center">
                   <img
